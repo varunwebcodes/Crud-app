@@ -1,12 +1,114 @@
-# React + Vite
+# CRUD App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **CRUD (Create, Read, Update, Delete)** application built with **React**, **Vite**, **React Router**, **Axios**, and **Tailwind CSS**.  
+This app allows users to create, view, update, and delete user records, using **json‑server** as a mock backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## Expanding the ESLint configuration
+- 🟢 **Create User**  
+- 👁️ **Read All Users**  
+- 📄 **View Single User Details**  
+- ✏️ **Update User**  
+- 🗑️ **Delete User**  
+- 💅 Styled UI with **Tailwind CSS**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Technologies Used
+
+- ⚛️ **React** (Frontend)
+- 🔁 **React Router** (Client routing)
+- 📡 **Axios** (HTTP requests)
+- 🎨 **Tailwind CSS** (Styling)
+- 📦 **Vite** (Dev server & bundler)
+- 🧪 **json‑server** (Mock REST API)
+
+---
+
+## 🚀 Demo
+
+> This is a local demo app.  
+> Run the app locally to see it in action.
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/varunwebcodes/Crud-app.git
+cd Crud-app
+
+2. Install dependencies
+npm install
+
+3. Install and run json-server
+
+Make sure you have json-server installed globally:
+
+npm install -g json-server
+
+
+Then start the mock API:
+
+json-server --watch db.json --port 3001
+
+
+This serves your REST API at:
+
+http://localhost:3001/users
+
+4. Start the React app
+npm run dev
+
+
+Open your browser and visit:
+
+http://localhost:5173
+
+📁 Project Structure
+├─ public/
+├─ src/
+│   ├─ components/
+│   ├─ pages/
+│   ├─ App.jsx
+│   ├─ main.jsx
+├─ db.json
+├─ package.json
+├─ vite.config.js
+└─ README.md
+
+📝 What You Can Do
+
+✔ Add users
+✔ See a list of all users
+✔ View an individual user
+✔ Edit user details
+✔ Delete a user
+
+👨‍💻 How It Works
+
+json‑server acts as a local REST API.
+
+Axios makes API calls to:
+
+GET /users – list users
+
+GET /users/:id – single user
+
+POST /users – create user
+
+PUT /users/:id – update user
+
+DELETE /users/:id – delete user
+
+React Router handles page navigation without reloads.
+
+📫 Contact
+
+Created by varunwebcodes
+
+Happy Learning! 🚀
